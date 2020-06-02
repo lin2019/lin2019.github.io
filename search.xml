@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>git命令一览</title>
+      <link href="/2020/06/03/git%E5%91%BD%E4%BB%A4%E4%B8%80%E8%A7%88/"/>
+      <url>/2020/06/03/git%E5%91%BD%E4%BB%A4%E4%B8%80%E8%A7%88/</url>
+      
+        <content type="html"><![CDATA[<img src="/images/git.png"><a id="more"></a><h3 id="1、git初始化"><a href="#1、git初始化" class="headerlink" title="1、git初始化"></a>1、git初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><h3 id="2、添加到暂存区"><a href="#2、添加到暂存区" class="headerlink" title="2、添加到暂存区"></a>2、添加到暂存区</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 单个文件提交 --&gt;</span><br><span class="line">git add &lt;file&gt; </span><br><span class="line">&lt;!-- 所有提交 --&gt;</span><br><span class="line">git add .</span><br></pre></td></tr></table></figure><h3 id="3、添加到本地仓库"><a href="#3、添加到本地仓库" class="headerlink" title="3、添加到本地仓库"></a>3、添加到本地仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;提交xinxi&quot;</span><br></pre></td></tr></table></figure><h3 id="4、查看仓库状态"><a href="#4、查看仓库状态" class="headerlink" title="4、查看仓库状态"></a>4、查看仓库状态</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><h3 id="5、查看历史记录"><a href="#5、查看历史记录" class="headerlink" title="5、查看历史记录"></a>5、查看历史记录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure><h3 id="6、分支管理"><a href="#6、分支管理" class="headerlink" title="6、分支管理"></a>6、分支管理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 查看本地分支 --&gt;</span><br><span class="line">git branch</span><br><span class="line">&lt;!-- 查看远程和本地所有分支 --&gt;</span><br><span class="line">git branch -a</span><br><span class="line">&lt;!-- 新建分支 --&gt;</span><br><span class="line">git branch &lt;branchname&gt;</span><br><span class="line">&lt;!-- 切换分支 --&gt;</span><br><span class="line">git checkout &lt;branchname&gt;</span><br><span class="line">&lt;!-- 新建并切换分支 --&gt;</span><br><span class="line">git checkout -b &lt;branchname&gt;</span><br><span class="line">&lt;!-- 检出远程分支，创建本地分支 --&gt;</span><br><span class="line">git checkout -b &lt;branchname&gt; origin&#x2F;&lt;branchname&gt;</span><br><span class="line">&lt;!-- 删除本地分支 --&gt;</span><br><span class="line">git branch -d &lt;branchname&gt;</span><br><span class="line">&lt;!-- 删除远程分支 --&gt;</span><br><span class="line">git push origin --delete &lt;branchname&gt;</span><br></pre></td></tr></table></figure><h3 id="7、本地、远程代码的拉取和提交"><a href="#7、本地、远程代码的拉取和提交" class="headerlink" title="7、本地、远程代码的拉取和提交"></a>7、本地、远程代码的拉取和提交</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 拉取 --&gt;</span><br><span class="line">git pull</span><br><span class="line">&lt;!-- 提交到远程master分支 --&gt;</span><br><span class="line">git push origin master</span><br><span class="line">git push</span><br><span class="line">&lt;!-- 提交到远程指定分支 --&gt;</span><br><span class="line">git push origin &lt;本地分支名称&gt;:&lt;远程分支名称&gt;</span><br></pre></td></tr></table></figure><h3 id="8、存储本地代码"><a href="#8、存储本地代码" class="headerlink" title="8、存储本地代码"></a>8、存储本地代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 保存存储代码 --&gt;</span><br><span class="line">git stash save &quot;提示信息&quot;</span><br><span class="line">&lt;!-- 查看存储列表 --&gt;</span><br><span class="line">git stash list</span><br><span class="line">&lt;!-- 恢复存储代码并删除存储 --&gt;</span><br><span class="line">git stash pop</span><br><span class="line">&lt;!-- 删除所有存储 --&gt;</span><br><span class="line">git stash clear</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法一览</title>
       <link href="/2020/05/31/Markdown%E8%AF%AD%E6%B3%95%E4%B8%80%E8%A7%88/"/>
       <url>/2020/05/31/Markdown%E8%AF%AD%E6%B3%95%E4%B8%80%E8%A7%88/</url>
