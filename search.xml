@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript正则表达语法一览</title>
+      <link href="/2020/06/05/JavaScript%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E8%AF%AD%E6%B3%95%E4%B8%80%E8%A7%88/"/>
+      <url>/2020/06/05/JavaScript%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E8%AF%AD%E6%B3%95%E4%B8%80%E8%A7%88/</url>
+      
+        <content type="html"><![CDATA[<img src="/images/reg.jpg"><a id="more"></a><h3 id="1、创建正则表达式"><a href="#1、创建正则表达式" class="headerlink" title="1、创建正则表达式"></a>1、创建正则表达式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> reg = <span class="regexp">/ab+c/</span></span><br><span class="line"><span class="keyword">var</span> re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'ab+c'</span>)</span><br></pre></td></tr></table></figure><h3 id="2、特殊字符"><a href="#2、特殊字符" class="headerlink" title="2、特殊字符"></a>2、特殊字符</h3><table><thead><tr><th>特殊符号</th><th>作用</th></tr></thead><tbody><tr><td>^</td><td>匹配输入的开始</td></tr><tr><td>$</td><td>匹配输入的结束</td></tr><tr><td>*</td><td>匹配0次或多次</td></tr><tr><td>+</td><td>匹配1次或多次</td></tr><tr><td>?</td><td>匹配0次或1次</td></tr><tr><td>.</td><td>匹配除换行符的任何单个字符</td></tr><tr><td>a|b</td><td>匹配a或b</td></tr><tr><td>{n}</td><td>n是正整数，匹配字符n次</td></tr><tr><td>{n,}</td><td>n是正整数,匹配至少n次</td></tr><tr><td>{n,m}</td><td>n,m都是整数，匹配字符至少n次，最多m次，n，m为0忽略</td></tr><tr><td>[xyz]</td><td>匹配字符集中任意符号</td></tr><tr><td>[^xyz]</td><td>匹配任何不在字符集的符号</td></tr><tr><td>\b</td><td>匹配一个词的边界</td></tr><tr><td>\d</td><td>匹配一个数字，等价于[0-9]</td></tr><tr><td>\D</td><td>匹配一个非数字，等价于[^0-9]</td></tr><tr><td>\n</td><td>匹配一个换行符</td></tr><tr><td>\w</td><td>匹配一个单字字符，等价于[A-Za-z0-9_]</td></tr><tr><td>\W</td><td>匹配一个非单字字符，等价于[^A-Za-z0-9_]</td></tr><tr><td>\s</td><td>匹配一个空白字符，包括空格、制表符、换页符和换行符</td></tr><tr><td>\S</td><td>匹配一个非空白字符</td></tr><tr><td>\t</td><td>匹配一个水平制表符</td></tr><tr><td>\v</td><td>匹配一个垂直制表符</td></tr><tr><td>\f</td><td>匹配一个换页符</td></tr><tr><td>\r</td><td>匹配一个回车符</td></tr></tbody></table><h3 id="3、方法"><a href="#3、方法" class="headerlink" title="3、方法"></a>3、方法</h3><table><thead><tr><th>方法</th><th>作用</th></tr></thead><tbody><tr><td>exce</td><td>字符串查找匹配RegExp方法，返回数组，未匹配返回null</td></tr><tr><td>test</td><td>字符串测试是否匹配RegExp方法，返回true或false</td></tr><tr><td>match</td><td></td></tr><tr><td>matchAll</td><td></td></tr><tr><td>search</td><td>查找匹配项索引值，没有-1</td></tr><tr><td>replace</td><td>替换匹配项</td></tr><tr><td>split</td><td></td></tr></tbody></table><h3 id="4、搜索"><a href="#4、搜索" class="headerlink" title="4、搜索"></a>4、搜索</h3><table><thead><tr><th>标志</th><th>作用</th></tr></thead><tbody><tr><td>g</td><td>全局搜索</td></tr><tr><td>i</td><td>不区分大小写</td></tr><tr><td>m</td><td>多行搜索</td></tr><tr><td>s</td><td>允许.匹配换行符</td></tr><tr><td>u</td><td>unicode码匹配</td></tr><tr><td>y</td><td>执行“粘性(<code>sticky</code>)”搜索,匹配从目标字符串的当前位置开始</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> RegExp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git命令一览</title>
       <link href="/2020/06/03/git%E5%91%BD%E4%BB%A4%E4%B8%80%E8%A7%88/"/>
       <url>/2020/06/03/git%E5%91%BD%E4%BB%A4%E4%B8%80%E8%A7%88/</url>
